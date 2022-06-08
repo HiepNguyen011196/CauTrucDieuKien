@@ -5,6 +5,74 @@
     <title>BaiTap7</title>
 </head>
 <body>
-adfasdf
+
 </body>
+    <script>
+        // Bai 1: Kiem tra a chia het cho b
+        let a=prompt("Nhap so a");
+        let b=prompt("Nhap so b");
+        if (a % b == 0){
+            alert("a chia het cho b")
+        } else {
+            alert("a khong chia het cho b")
+        }
+
+        // // Bai 2:Nhap tuoi
+        let age=prompt("Nhap so tuoi");
+        if (age >= 15) {
+            alert("Hoc sinh du dieu kien hoc lop 10")
+        } else {
+            alert("Khong du dieu kien")
+        }
+
+        // // Bai 3: Xem co nguyen lon hon hay nho hon 10
+        let soNguyen=prompt("Nhap so nguyen");
+        if (soNguyen > 0) {
+            alert("So nguyen lon hon 0")
+        } else if (soNguyen < 0) {
+            alert("So nguyen nho hon 0")
+        } else {
+            alert("So nguyen bang 0")
+        }
+        // // Bai 4:Tim gia tri lon nhat trong 3 so nguyen
+        let soNguyen1=prompt("Nhap so nguyen dau tien");
+        let soNguyen2=prompt("Nhap so nguyen thu hai");
+        let soNguyen3=prompt("Nhap so nguyen thu ba");
+        if (soNguyen1 > soNguyen2 && soNguyen1 > soNguyen3) {
+            alert("So nguyen dau tien lon nhat")
+        } else if (soNguyen2 > soNguyen1 && soNguyen2 > soNguyen3) {
+            alert("So nguyen thu hai lon nhat")
+        } else {
+            alert("So nguyen thu ba lon nhat")
+        }
+        // // Bai 5: Xep hang hoc luc
+        let diemKiemTra=prompt("Nhap diem kiem tra");
+        let diemGiuaKy=prompt("Nhap diem giua ky");
+        let diemCuoiKy=prompt("Nhap diem cuoi ky");
+        let diemTrungBinh = (diemKiemTra + diemGiuaKy + diemCuoiKy)/3;
+        if (diemTrungBinh >= 0 && diemTrungBinh <= 10) {
+            if (diemTrungBinh >= 8) {
+                alert("Hoc luc gioi")
+            } else if (diemTrungBinh >= 6.5) {
+                alert("Hoc luc kha")
+            } else if(diemTrungBinh > 5) {
+                alert("Hoc luc trung binh")
+            } else {
+                alert("O lai lop")
+            }
+        } else {
+            alert("Diem khong hop le")
+        }
+
+        // Bai 6: Tinh hoa hong
+        let doanhSo=prompt("Nhap doanh so ban hang");
+        let hoaHong = doanhSo/20;
+        alert(hoaHong);
+
+        // Bai 7: Tinh cuoc dien thoai
+        let minutesCalled=prompt("So phut da goi");
+        let numberOfTexts=prompt("Tong so tin nhan da gui");
+        let tienDienThoai = minutesCalled*200 + numberOfTexts*200;
+        alert("Tien dien thoai cua ban la : " + tienDienThoai+"VND")
+    </script>
 </html>
