@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BaiTap8</title>
+</head>
+<body>
+
+</body>
+  <script>
+    // Bai 1: chuyen do C sang F
+    // let nhapDoC=prompt("Nhap do C");
+    // let doF= nhapDoC * 9/5 + 32;
+    // document.write("Ket qua la : "+ doF + " do F");
+
+    // Bai 2: Chuyen tu met sang feet
+    // let meter=prompt("Enter meter");
+    // let feet=meter * 3.2808;
+    // document.write("Ket qua la : " + feet + "ft");
+
+    // Bai 3: Dien tich hinh vuong
+    // let side=prompt("Enter side of the square");
+    // let area=side * side;
+    // document.write("Dien tich hinh vuong la = " + area);
+
+    // Bai 4: Dien tich hinh chu nhat voi canh a,b
+    // let a=prompt("Nhap chieu dai a");
+    // let b=prompt("Nhap chieu rong b");
+    // let area=a*b;
+    // document.write("Dien tich hinh chu nhat la: "+area)
+
+    // Bai 5: Dien tich tam giac vuong voi 2 canh a,b
+    // let a=prompt("Nhap canh a");
+    // let b=prompt("Nhap canh b");
+    // let area=a*b / 2;
+    // document.write("Dien tich tam giac vuong la: " + area);
+
+    // Bai 6: Giai phuong trinh bac 1 (ax+b=0)
+    // alert("Phuong trinh bac 1 ax+b=0")
+    // let a=prompt("Nhap a");
+    // let b=prompt("Nhap b");
+    // if (a == 0 && b == 0) {
+    //     alert("Phuong trinh vo so nghiem")
+    // } else if (a != 0 && b == 0) {
+    //     alert("phuong trinh co nghiem x = 0")
+    // } else if (a == 0 && b != 0) {
+    //     alert("Phuong trinh vo nghiem")
+    // } else {
+    //     alert("Phuong trinh co nghiem x = " + (-b / a))
+    // }
+
+    // Bai 7: Giai phuong trinh bac 2 (ax^2 + bx + c = 0)
+    // let root1, root2;
+    // let a = prompt("Enter first number");
+    // let b = prompt("Enter second number");
+    // let c = prompt("Enter third number");
+    // a=parseInt(a);
+    // b=parseInt(b);
+    // c=parseInt(c);
+    // let discriminant = Math.sqrt(b*b - 4*a*c);
+    // let denominator = 2*a;
+    // if (discriminant > 0) {
+    //     root1 = (-b + discriminant) / denominator;
+    //     root2 = (-b - discriminant) / denominator;
+    //     alert("Roots are equal to: "+root1+" and "+root2);
+    // } else if (discriminant == 0) {
+    //     root1 = root2 = -b / denominator;
+    //     alert("Roots are equal to: "+root1+" and "+root2);
+    // } else {
+    //     alert("There are no roots")
+    // }
+
+    // Bai 8: Kiem tra co phai so tuoi mot nguoi
+    // let soTuoi = prompt("Nhap so tuoi");
+    // if (soTuoi > 0 && soTuoi < 120) {
+    //     alert("Day la so tuoi cua mot nguoi")
+    // } else {
+    //     alert("Day khong phai la so tuoi cua mot nguoi")
+    // }
+
+    // Bai 9: Kiem tra co phai canh cua 1 tam giac
+    // let a = prompt("Nhap a");
+    // let b = prompt("Nhap b");
+    // let c = prompt("Nhap c");
+    // if (a,b,c > 0 && a+b>c && b+c>a && b+c>a) {
+    //     alert("Day la 3 canh cua 1 hinh tam giac")
+    // } else {
+    //     alert("Day khong phai la 3 canh cua 1 hinh tam giac")
+    // }
+
+    // Bai 10: Chuong trinh tinh gia dien
+    // let kWh = prompt("Nhap so kWh");
+    // let tienDien;
+    // // Gia tien dien tu 0-50 kWh la 1678 d/kWh
+    // // 51-100 kWh la 1734 d/kWh
+    // // 101-200 kWh la 2014 d/kWh
+    // // 201-300 kWh la 2536 d/kWh
+    // // 301-400 kWh la 2834 d/kWh
+    // // >400 kWh la 2927 d/kWh
+    // if (kWh>0 && kWh<=50) {
+    //     tienDien = kWh*1678;
+    // } else if (kWh<=100) {
+    //     tienDien = 50*1678 + kWh*1734;
+    // } else if (kWh<=200) {
+    //     tienDien = 50*1678 + 50*1734 + kWh*2014;
+    // } else if (kWh<=300) {
+    //     tienDien = 50*1678 + 50*1734 + 100*2014 + kWh*2536
+    // } else if (kWh<=400) {
+    //     tienDien = 50*1678 + 50*1734 + 100*2014 + 100*2536 + kWh*2834;
+    // } else {
+    //     tienDien = 50*1678 + 50*1734 + 100*2014 + 100*2536 + 100*2834 + kWh*2927;
+    // }
+    // alert("Tien dien cua ban la: "+tienDien+"VND")
+
+    // Bai 11: Tinh thue thu nhap ca nhan
+   //  let thuNhap = prompt("Nhap thu nhap ca nhan");
+   //  let tongThue;
+   //  /* Thu nhap nho hon <60tr thi thue la 5%
+   //  60tr - 120tr thi thue la 10%
+   //  120tr - 216tr thi thue la 15%
+   //  216tr - 385tr thi thue la 20%
+   // >385tr thi thue la 25%
+   //   */
+   //  if (thuNhap<60000000) {
+   //      tongThue = thuNhap*0.05;
+   //  } else if (thuNhap<120000000) {
+   //      tongThue = 60000000*0.05 + (thuNhap-60000000)*0.1
+   //  } else if (thuNhap<216000000) {
+   //      tongThue = 60000000*0.05 + 60000000*0.1 + (thuNhap-60000000-60000000)*0.15
+   //  } else if (thuNhap<385000000) {
+   //      tongThue = 60000000*0.05 + 60000000*0.1 + 94000000*0.15 + (thuNhap-60000000-60000000-94000000)*0.2
+   //  } else {
+   //      tongThue = 60000000*0.05 + 60000000*0.1 + 94000000*0.15 + 169000000*0.2 + (thuNhap-60000000-60000000-94000000-169000000)*0.25
+   //  }
+   //  alert("Thue thu nhap ca nhan cua ban la: "+tongThue);
+
+    // Bai 12: Tinh lai ngan hang
+    let soTienVay = prompt("So tien ban vay la");
+    let thoiGianVay = prompt("So thang ban vay la");
+    let soTienNo;
+    /* Lai ngan hang la 3% 3 thang dau
+    6% tu thang 3-6
+    9% tu thang 6-9
+    12% tu thang 9-12
+     */
+    switch (thoiGianVay) {
+        case 1:
+            soTienNo1Thang = soTienVay + soTienVay*0.03;
+            alert("So tien ban no ngan hang la: "); break;
+        case 2:
+            soTienNo2Thang = soTienNo1Thang + soTienNo1Thang*0.03;
+        case 3:
+            soTienNo3Thang = soTienNo2Thang + soTienNo2Thang*0.03;
+            alert("So tien ban no ngan hang la: "); break;
+        case 4:
+            soTienNo4Thang = soTienNo3Thang + soTienNo3Thang*0.06;
+            alert("So tien ban no ngan hang la: "); break;
+        case 5:
+            soTienNo5Thang = soTienNo4Thang + soTienNo4Thang*0.06;
+            alert("So tien ban no ngan hang la: "); break;
+        case 6:
+            soTienNo6Thang = soTienNo5Thang + soTienNo5Thang*0.06;
+            alert("So tien ban no ngan hang la: "); break;
+        case 7:
+            soTienNo7Thang = soTienNo6Thang + soTienNo6Thang*0.09;
+            alert("So tien ban no ngan hang la: "); break;
+        case 8:
+            soTienNo8Thang = soTienNo7Thang + soTienNo7Thang*0.09;
+            alert("So tien ban no ngan hang la: "); break;
+        case 9:
+            soTienNo9Thang = soTienNo8Thang + soTienNo8Thang*0.09;
+            alert("So tien ban no ngan hang la: "); break;
+        case 10:
+            soTienNo10Thang = soTienNo9Thang + soTienNo9Thang*0.12;
+            alert("So tien ban no ngan hang la: "); break;
+        case 11:
+            soTienNo11Thang = soTienNo10Thang + soTienNo10Thang*0.12;
+            alert("So tien ban no ngan hang la: "); break;
+        case 12:
+            soTienNo12Thang = soTienNo11Thang + soTienNo11Thang*0.12;
+            alert("So tien ban no ngan hang la: "); break;
+    }
+  </script>
+</html>
