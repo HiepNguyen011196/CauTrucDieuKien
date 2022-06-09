@@ -136,49 +136,37 @@
 
     // Bai 12: Tinh lai ngan hang
     let soTienVay = prompt("So tien ban vay la");
+    soTienVay = Number(soTienVay);
     let thoiGianVay = prompt("So thang ban vay la");
-    let soTienNo;
-    /* Lai ngan hang la 3% 3 thang dau
-    6% tu thang 3-6
-    9% tu thang 6-9
-    12% tu thang 9-12
-     */
+    thoiGianVay = Number(thoiGianVay);
+    let soTienNo = soTienVay * ((1 + 0.06)**thoiGianVay);
+    /* Lai ngan hang la 6% trong 1 nam dau*/
+
     switch (thoiGianVay) {
         case 1:
-            soTienNo1Thang = soTienVay + soTienVay*0.03;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 2:
-            soTienNo2Thang = soTienNo1Thang + soTienNo1Thang*0.03;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 3:
-            soTienNo3Thang = soTienNo2Thang + soTienNo2Thang*0.03;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 4:
-            soTienNo4Thang = soTienNo3Thang + soTienNo3Thang*0.06;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 5:
-            soTienNo5Thang = soTienNo4Thang + soTienNo4Thang*0.06;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 6:
-            soTienNo6Thang = soTienNo5Thang + soTienNo5Thang*0.06;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 7:
-            soTienNo7Thang = soTienNo6Thang + soTienNo6Thang*0.09;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 8:
-            soTienNo8Thang = soTienNo7Thang + soTienNo7Thang*0.09;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 9:
-            soTienNo9Thang = soTienNo8Thang + soTienNo8Thang*0.09;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 10:
-            soTienNo10Thang = soTienNo9Thang + soTienNo9Thang*0.12;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 11:
-            soTienNo11Thang = soTienNo10Thang + soTienNo10Thang*0.12;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
         case 12:
-            soTienNo12Thang = soTienNo11Thang + soTienNo11Thang*0.12;
-            alert("So tien ban no ngan hang la: "); break;
+            alert("So tien ban no ngan hang la: "+soTienNo); break;
     }
   </script>
 </html>
