@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BaiTap3</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="4"><input id="NhapSo" name="NhapSo"></td>
+        </tr>
+        <tr>
+            <td><button type="button" name="so 1" onclick="inputSo1()" value="1">1</button></td>
+            <td><button type="button" name="so 2" onclick="inputSo2()" value="2">2</button></td>
+            <td><button type="button" name="so 3" onclick="inputSo3()" value="3">3</button></td>
+            <td><button type="button" name="dau +" onclick="inputDauCong()" value="+">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" name="so 4" onclick="inputSo4()" value="4">4</button></td>
+            <td><button type="button" name="so 5" onclick="inputSo5()" value="5">5</button></td>
+            <td><button type="button" name="so 6" onclick="inputSo6()" value="6">6</button></td>
+            <td><button type="button" name="dau -" onclick="inputDauTru()" value="-">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" name="so 7" onclick="inputSo7()" value=7">7</button></td>
+            <td><button type="button" name="so 8" onclick="inputSo8()" value="8">8</button></td>
+            <td><button type="button" name="so 9" onclick="inputSo9()" value="9">9</button></td>
+            <td><button type="button" name="dau X" onclick="inputDauNhan()" value="dau X">X</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" name="C" onclick="xoa()" value="C">C</button></td>
+            <td><button type="button" name="so 0" onclick="inputSo0()" value="0">0</button></td>
+            <td><button type="button" name="dau =" onclick="result()" value="=">=</button></td>
+            <td><button type="button" name="dau /" value="/">/</button></td>
+        </tr>
+    </table>
+</body>
+<script>
+    let view = document.getElementById("NhapSo");
+    function inputSo1(){
+        view.value +=1;
+    }
+    function inputSo2(){
+        view.value +=2;
+    }
+    function inputSo3(){
+        view.value +=3;
+    }
+    function inputDauCong(){
+        view.value += "+";
+    }
+    function inputSo4(){
+        view.value +=4;
+    }
+    function inputSo5(){
+        view.value +=5;
+    }
+    function inputSo6(){
+        view.value +=6;
+    }
+    function inputDauTru(){
+        view.value += "-";
+    }function inputSo7(){
+        view.value +=1;
+    }
+    function inputSo8(){
+        view.value +=1;
+    }
+    function inputSo9(){
+        view.value +=1;
+    }
+    function inputDauNhan(){
+        view.value +=1;
+    }
+    function inputSo0(){
+        view.value +=1;
+    }
+    function result() {
+        let result = eval(view.value);
+        view.value = result;
+    }
+    function xoa() {
+        view.value="";
+    }
+</script>
+</html>
