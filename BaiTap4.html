@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoYouLoveMe</title>
+</head>
+<body>
+    <h1>DO YOU LOVE ME???</h1>
+    <button type="button" onclick="clickYes()" value="Yes">YES</button>
+    <button type="button" id="No" onmouseover="hoverNo()" style="position: absolute" value="No">NO</button>
+</body>
+    <script>
+        function clickYes() {
+            alert("Me too")
+        }
+        function hoverNo() {
+            let x = Math.random() * window.innerWidth;
+            let y = Math.random() * window.innerHeight;
+            document.getElementById("No").style.left = x + "px";
+            document.getElementById("No").style.top = y + "px";
+        }
+    </script>
+</html>
